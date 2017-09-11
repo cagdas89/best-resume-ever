@@ -1,13 +1,13 @@
 /* eslint-disable */
 export const PERSON = {
   name: {
-    first: 'John',
-    last: 'Doe',
+    first: 'Ufuk',
+    last: 'Eraslan',
   },
   position: 'Software Developer',
   birth: {
-    year: 1990,
-    location: 'New York'
+    year: 1996,
+    location: 'Yalova'
   },
   experience: [{
       company: 'Company A',
@@ -75,11 +75,11 @@ export const PERSON = {
   ],
   skillDescription: 'Also proficient in Adobe Photoshop and Illustrator, grew up bilingual (English and Klingon).',
   contact: {
-    email: 'john.doe@email.com',
-    phone: '0123 456789',
-    street: '1234 Broadway',
-    city: 'New York',
-    website: 'johndoe.com',
-    github: 'johnyD'
+    email: 'ufuk.eraslan@email.com',
+    phone: '0535 553 4691',
+    street: 'Göztepe Mah. Fahrettin Kerim Gökay Cad. No:170',
+    city: 'İstanbul',
+    // website: 'johndoe.com',
+    // github: 'johnyD'
   }
 };

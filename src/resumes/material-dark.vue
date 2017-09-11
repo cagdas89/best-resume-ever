@@ -52,7 +52,7 @@
       </div>
     </a>
 
-    <a :href="'https://github.com/'+person.contact.github" target="_blank">
+    <a v-if="person.contact.github" :href="'https://github.com/'+person.contact.github" target="_blank">
       <div class="item">
         <div class="icon">
           <i class="fa fa-github"></i>
@@ -64,7 +64,7 @@
       </div>
     </a>
 
-    <a :href="person.contact.website" target="_blank">
+    <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
       <div class="item">
         <div class="icon">
           <i class="material-icons">language</i>
@@ -75,7 +75,7 @@
       </div>
     </a>
 
-    <div class="item last">
+    <div v-if="person.skills" class="item last">
       <div class="section-headline">
         Skills
       </div>
@@ -101,7 +101,8 @@
     <div class="section-headline">Working experience</div>
     <div class="block" v-for="experience in person.experience">
       <div class="block-helper"></div>
-      <div class="headline">{{experience.position}} - {{experience.company}}</h3>
+      <div class="headline">
+        <h3>{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
         <p class="info">
           {{experience.description}}
